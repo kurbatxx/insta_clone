@@ -1,0 +1,39 @@
+name: insta_clone
+description: insta_clone
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cloud_firestore: ^4.0.4
+  collection: ^1.16.0
+  firebase_auth: ^4.1.1
+  firebase_core: ^2.1.1
+  firebase_storage: ^11.0.4
+  flutter_facebook_auth: ^5.0.6
+  flutter_hooks: ^0.18.5+1
+  font_awesome_flutter: ^10.2.1
+  google_sign_in: ^5.4.2
+  hooks_riverpod: ^2.1.1
+  image: ^3.2.2
+  image_picker: ^0.8.6
+  intl: ^0.17.0
+  lottie: ^1.4.3
+  share_plus: ^6.2.0
+  url_launcher: ^6.1.6
+  uuid: ^3.0.6
+  video_player: ^2.4.7
+  video_thumbnail: ^0.5.3
+    
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
+flutter:
+  uses-material-design: true
