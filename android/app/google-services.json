@@ -7,42 +7,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:322306948280:android:384a9eac74602fc922484d",
-        "android_client_info": {
-          "package_name": "com.example.insta_clone"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "322306948280-frpctu2gv09iem30eq90pker3ti2q2fj.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCaAhO1cUeyUjxbFxx8C3jkYr1ZKzcuULI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "322306948280-frpctu2gv09iem30eq90pker3ti2q2fj.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "322306948280-gl3d7k9c2dv8fqdn7paus7q30djuilor.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.instaClone"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:322306948280:android:d736033391604dab22484d",
         "android_client_info": {
           "package_name": "com.kurbatxx.insta_clone.insta_clone"
@@ -50,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "322306948280-0ina5u4hnj5fmm1fqahvvb16mgcf3gls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kurbatxx.insta_clone.insta_clone",
+            "certificate_hash": "272de5431e7fc5da277a832fa91eac67f0b04200"
+          }
+        },
+        {
           "client_id": "322306948280-frpctu2gv09iem30eq90pker3ti2q2fj.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -67,10 +39,10 @@
               "client_type": 3
             },
             {
-              "client_id": "322306948280-gl3d7k9c2dv8fqdn7paus7q30djuilor.apps.googleusercontent.com",
+              "client_id": "322306948280-1t85r2eg4nmhen2iel5ob27kbnvhnfnf.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.instaClone"
+                "bundle_id": "com.kurbatxx.instaclone.instaClone"
               }
             }
           ]

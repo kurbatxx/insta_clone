@@ -28,7 +28,7 @@ class Authentificator {
 
     try {
       await FirebaseAuth.instance.signInWithCredential(oauthCredentials);
-      return AuthResult.aborted;
+      return AuthResult.success;
     } on FirebaseAuthException catch (e) {
       final email = e.email;
       final credential = e.credential;
