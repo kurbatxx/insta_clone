@@ -6,6 +6,7 @@ import 'package:insta_clone/state/auth/models/auth_result.dart';
 import 'package:insta_clone/state/auth/posts/typedefs/user_id.dart';
 
 class Authentificator {
+  const Authentificator();
   UserId? get userId => FirebaseAuth.instance.currentUser?.uid;
   bool get isAlreadyLoggedIn => userId != null;
   String get displayName =>
@@ -58,10 +59,10 @@ class Authentificator {
     if (signInAccont == null) {
       return AuthResult.aborted;
     }
-    final googleFuth = await signInAccont.authentication;
+    final googleAuth = await signInAccont.authentication;
     final oauthCredential = GoogleAuthProvider.credential(
-      idToken: googleFuth.idToken,
-      accessToken: googleFuth.accessToken,
+      idToken: googleAuth.idToken,
+      accessToken: googleAuth.accessToken,
     );
     try {
       await FirebaseAuth.instance.signInWithCredential(oauthCredential);
