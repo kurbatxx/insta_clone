@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:insta_clone/state/views/conponents/constants/strings.dart';
-import 'package:insta_clone/state/views/conponents/loading/loading_screen_controller.dart';
+import 'package:insta_clone/views/components/constants/strings.dart';
+import 'package:insta_clone/views/components/loading/loading_screen_controller.dart';
 
 class LoadingScreen {
   LoadingScreen._sharedInstance();
