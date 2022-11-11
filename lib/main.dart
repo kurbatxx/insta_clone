@@ -3,6 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_clone/state/auth/providers/auth_state_provider.dart';
 import 'package:insta_clone/state/auth/providers/is_logged_in_provider.dart';
+import 'package:insta_clone/state/providers/is_loading_provider.dart';
+import 'package:insta_clone/state/views/conponents/loading/loading_screen.dart';
 import 'firebase_options.dart';
 
 import 'dart:developer' as devtools show log;
@@ -43,6 +45,14 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Consumer(
         builder: (context, ref, child) {
+          ref.listen(isLoadingProvider, (_, isLoading) {
+            if (isLoading) {
+              LoadingScreen.instance().show(context: context);
+            } else {
+              LoadingScreen.instance().hide();
+            }
+          });
+
           final isLoggedIn = ref.watch(isLoggedInProvider);
           isLoggedIn.log();
           if (isLoggedIn) {
