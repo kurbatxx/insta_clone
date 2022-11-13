@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "322306948280-fid8hh4cdi5ugpu3bqn91sg5q1np1mjv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kurbatxx.insta_clone.insta_clone",
+            "certificate_hash": "16569f04fb08ea01acb388fe6cf5d410779fc3f9"
+          }
+        },
+        {
           "client_id": "322306948280-frpctu2gv09iem30eq90pker3ti2q2fj.apps.googleusercontent.com",
           "client_type": 3
         }
