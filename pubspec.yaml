@@ -37,3 +37,11 @@ dev_dependencies:
   flutter_lints: ^2.0.1
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/animations/data_not_found.json 
+    - assets/animations/empty.json 
+    - assets/animations/loading.json
+    
+    - assets/animations/error.json  
+    - assets/animations/small_error.json 
