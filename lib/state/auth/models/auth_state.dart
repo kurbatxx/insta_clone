@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:insta_clone/state/auth/models/auth_result.dart';
-import 'package:insta_clone/state/auth/posts/typedefs/user_id.dart';
+import 'package:insta_clone/state/posts/typedefs/user_id.dart';
 
 @immutable
 class AuthState {

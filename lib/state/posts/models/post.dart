@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show immutable;
-import 'package:insta_clone/state/auth/posts/models/post_key.dart';
+import 'package:insta_clone/state/posts/models/post_key.dart';
 import 'package:insta_clone/state/image_uploads/models/file_type.dart';
 import 'package:insta_clone/state/post_settings/models/post_setting.dart';
 

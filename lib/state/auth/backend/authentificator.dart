@@ -3,7 +3,7 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:insta_clone/state/auth/constants/constants.dart';
 import 'package:insta_clone/state/auth/models/auth_result.dart';
-import 'package:insta_clone/state/auth/posts/typedefs/user_id.dart';
+import 'package:insta_clone/state/posts/typedefs/user_id.dart';
 
 class Authentificator {
   const Authentificator();
