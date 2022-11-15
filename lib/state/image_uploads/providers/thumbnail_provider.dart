@@ -7,7 +7,7 @@ import 'package:insta_clone/state/image_uploads/models/image_with_aspect_ratio.d
 import 'package:insta_clone/state/image_uploads/models/thumbnail_request.dart';
 import 'package:video_thumbnail/video_thumbnail.dart';
 
-final ThumbnailProvider =
+final thumbnailProvider =
     FutureProvider.family.autoDispose<ImageWihAspectRatio, ThumbnailRequest>((
   ref,
   ThumbnailRequest request,
