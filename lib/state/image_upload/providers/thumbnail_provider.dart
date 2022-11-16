@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:insta_clone/state/image_uploads/exception/could_not_build_thumbnail_exception.dart';
-import 'package:insta_clone/state/image_uploads/extentions/get_aspect_ratio.dart';
-import 'package:insta_clone/state/image_uploads/models/file_type.dart';
-import 'package:insta_clone/state/image_uploads/models/image_with_aspect_ratio.dart';
-import 'package:insta_clone/state/image_uploads/models/thumbnail_request.dart';
+import 'package:insta_clone/state/image_upload/exception/could_not_build_thumbnail_exception.dart';
+import 'package:insta_clone/state/image_upload/extentions/get_image_aspect_ratio.dart';
+import 'package:insta_clone/state/image_upload/models/file_type.dart';
+import 'package:insta_clone/state/image_upload/models/image_with_aspect_ratio.dart';
+import 'package:insta_clone/state/image_upload/models/thumbnail_request.dart';
 import 'package:video_thumbnail/video_thumbnail.dart';
 
 final thumbnailProvider =

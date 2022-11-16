@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 class PostKey {
   static const userId = 'uid';
   static const message = 'message';
-  static const createAt = 'created_at';
+  static const createdAt = 'created_at';
   static const thumbnailUrl = 'thimbnsil_url';
   static const fileUrl = 'file_url';
   static const fileType = 'file_type';

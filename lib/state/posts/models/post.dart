@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:insta_clone/state/posts/models/post_key.dart';
-import 'package:insta_clone/state/image_uploads/models/file_type.dart';
+import 'package:insta_clone/state/image_upload/models/file_type.dart';
 import 'package:insta_clone/state/post_settings/models/post_setting.dart';
 
 @immutable
@@ -22,7 +22,7 @@ class Post {
   Post({required this.postId, required Map<String, dynamic> json})
       : userId = json[PostKey.userId],
         message = json[PostKey.message],
-        createdAt = (json[PostKey.createAt] as Timestamp).toDate(),
+        createdAt = (json[PostKey.createdAt] as Timestamp).toDate(),
         thumbnailUrl = json[PostKey.thumbnailUrl],
         fileUrl = json[PostKey.fileUrl],
         fileType = FileType.values.firstWhere(

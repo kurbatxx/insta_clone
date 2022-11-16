@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/foundation.dart' show immutable;
-import 'package:insta_clone/state/image_uploads/models/file_type.dart';
+import 'package:insta_clone/state/image_upload/models/file_type.dart';
 
 @immutable
 class ThumbnailRequest {
