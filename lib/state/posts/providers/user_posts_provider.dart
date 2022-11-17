@@ -10,6 +10,8 @@ import 'package:insta_clone/state/posts/models/post_key.dart';
 
 final userPostsProvider = StreamProvider.autoDispose<Iterable<Post>>((ref) {
   final userId = ref.watch(userIdProvider);
+  print(userId);
+  
   final controller = StreamController<Iterable<Post>>();
 
   controller.onListen = () {
@@ -17,20 +19,35 @@ final userPostsProvider = StreamProvider.autoDispose<Iterable<Post>>((ref) {
   };
 
   final sub = FirebaseFirestore.instance
-      .collection(FirebaseCollectionName.posts)
-      .orderBy(FirebaseFieldName.createdAt, descending: true)
-      .where(PostKey.userId, isEqualTo: userId)
+      .collection(
+        FirebaseCollectionName.posts,
+      )
+      .orderBy(
+        FirebaseFieldName.createdAt,
+        descending: true,
+      )
+      .where(
+        PostKey.userId,
+        isEqualTo: userId,
+      )
       .snapshots()
-      .listen((snapshot) {
-    final documents = snapshot.docs;
-    final posts = documents.where((doc) => !doc.metadata.hasPendingWrites).map(
-          (doc) => Post(
-            postId: doc.id,
-            json: doc.data(),
-          ),
-        );
-    controller.sink.add(posts);
-  });
+      .listen(
+    (snapshot) {
+      final documents = snapshot.docs;
+
+      final posts = documents
+          .where(
+            (doc) => !doc.metadata.hasPendingWrites,
+          )
+          .map(
+            (doc) => Post(
+              postId: doc.id,
+              json: doc.data(),
+            ),
+          );
+      controller.sink.add(posts);
+    },
+  );
 
   ref.onDispose(() {
     sub.cancel();
