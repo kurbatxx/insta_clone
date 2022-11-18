@@ -4,7 +4,6 @@ import 'package:insta_clone/state/comments/models/comment_payload.dart';
 import 'package:insta_clone/state/comments/typedefs/post_id.dart';
 import 'package:insta_clone/state/constant/firebase_collection_name.dart';
 import 'package:insta_clone/state/post_settings/typedefs/is_loading.dart';
-import 'package:insta_clone/state/posts/models/post.dart';
 import 'package:insta_clone/state/posts/typedefs/user_id.dart';
 
 class SendCommentNotifier extends StateNotifier<IsLoading> {

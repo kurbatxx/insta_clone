@@ -10,7 +10,6 @@ import 'package:insta_clone/state/posts/models/post_key.dart';
 
 final userPostsProvider = StreamProvider.autoDispose<Iterable<Post>>((ref) {
   final userId = ref.watch(userIdProvider);
-  print(userId);
   
   final controller = StreamController<Iterable<Post>>();
 
