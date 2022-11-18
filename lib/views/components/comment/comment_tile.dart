@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_clone/state/auth/providers/user_id_provider.dart';
 import 'package:insta_clone/state/comments/models/comment.dart';
-import 'package:insta_clone/state/comments/providers/delete_comments_provider.dart';
+import 'package:insta_clone/state/comments/providers/delete_comment_provider.dart';
 import 'package:insta_clone/state/user_info/providers/user_info_model_provider.dart';
 import 'package:insta_clone/views/components/animations/loading_animation_view.dart';
 import 'package:insta_clone/views/components/animations/small_error_animation_view.dart';
