@@ -14,14 +14,16 @@ class PostVideoView extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = VideoPlayerController.network(post.fileUrl);
+    final controller = VideoPlayerController.network(
+      post.fileUrl,
+    );
 
     final isVideoPlayerReady = useState(false);
 
     useEffect(() {
       controller.initialize().then(
         (value) {
-          isVideoPlayerReady.value = false;
+          isVideoPlayerReady.value = true;
           controller.setLooping(true);
           controller.play();
         },
