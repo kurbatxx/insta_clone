@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_clone/state/posts/models/post.dart';
-import 'package:insta_clone/state/user_info/models/user_info_model.dart';
 import 'package:insta_clone/state/user_info/providers/user_info_model_provider.dart';
 import 'package:insta_clone/views/components/animations/small_error_animation_view.dart';
 import 'package:insta_clone/views/components/rich_two_parts_component.dart';
