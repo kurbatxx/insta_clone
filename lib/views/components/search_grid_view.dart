@@ -4,7 +4,6 @@ import 'package:insta_clone/state/posts/providers/posts_by_search_term_provider.
 import 'package:insta_clone/views/components/animations/data_not_found_animation_view.dart';
 import 'package:insta_clone/views/components/animations/empty_contents_with_text_animation_view.dart';
 import 'package:insta_clone/views/components/animations/error_animation_view.dart';
-import 'package:insta_clone/views/components/post/posts_grid_view.dart';
 import 'package:insta_clone/views/components/post/posts_sliver_grid_view.dart';
 import 'package:insta_clone/views/constants/strings.dart';
 
