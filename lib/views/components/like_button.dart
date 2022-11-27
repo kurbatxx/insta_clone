@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_clone/state/auth/providers/user_id_provider.dart';
-import 'package:insta_clone/state/comments/typedefs/post_id.dart';
+import 'package:insta_clone/state/posts/typedefs/post_id.dart';
 import 'package:insta_clone/state/likes/models/like_dislike_request.dart';
 import 'package:insta_clone/state/likes/providers/has_liked_post_provider.dart';
 import 'package:insta_clone/state/likes/providers/like_dislike_provider.dart';

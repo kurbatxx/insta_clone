@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:insta_clone/state/comments/typedefs/post_id.dart';
+import 'package:insta_clone/state/posts/typedefs/post_id.dart';
 import 'package:insta_clone/state/constant/firebase_collection_name.dart';
 import 'package:insta_clone/state/constant/firebase_field_name.dart';
 import 'package:insta_clone/state/image_upload/extentions/get_collection_name_from_file_type.dart';

@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:insta_clone/state/comments/typedefs/comment_id.dart';
-import 'package:insta_clone/state/comments/typedefs/post_id.dart';
+import 'package:insta_clone/state/posts/typedefs/post_id.dart';
 import 'package:insta_clone/state/constant/firebase_field_name.dart';
 import 'package:insta_clone/state/posts/typedefs/user_id.dart';
 

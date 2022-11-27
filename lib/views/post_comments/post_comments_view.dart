@@ -5,7 +5,7 @@ import 'package:insta_clone/state/auth/providers/user_id_provider.dart';
 import 'package:insta_clone/state/comments/models/post_comments_request.dart';
 import 'package:insta_clone/state/comments/providers/post_comments_provider.dart';
 import 'package:insta_clone/state/comments/providers/send_comment_provider.dart';
-import 'package:insta_clone/state/comments/typedefs/post_id.dart';
+import 'package:insta_clone/state/posts/typedefs/post_id.dart';
 import 'package:insta_clone/views/components/animations/empty_contents_with_text_animation_view.dart';
 import 'package:insta_clone/views/components/animations/error_animation_view.dart';
 import 'package:insta_clone/views/components/animations/loading_animation_view.dart';
