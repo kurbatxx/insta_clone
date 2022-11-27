@@ -22,7 +22,7 @@ class PostCommentsView extends HookConsumerWidget {
   });
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final commentController = TextEditingController();
+    final commentController = useTextEditingController();
     final hasText = useState(false);
 
     final request = useState(
